@@ -15,4 +15,4 @@ jobs:
         BRANCH: gh-pages
         FOLDER: docs
         NODE_ENV: production
-        BUILD_SCRIPT: mkdir -p docs/assets && mkdir -p docs/js && echo 'sandbox.is' > docs/CNAME && npm install && npm run build
+        BUILD_SCRIPT: npm install && npm run build
