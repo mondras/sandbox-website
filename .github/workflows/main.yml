@@ -10,6 +10,7 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
+        CNAME: sandbox.is
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BASE_BRANCH: build-using-github-actions
         BRANCH: gh-pages
