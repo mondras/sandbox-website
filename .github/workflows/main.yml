@@ -16,4 +16,4 @@ jobs:
         BRANCH: gh-pages
         FOLDER: docs
         NODE_ENV: production
-        BUILD_SCRIPT: npm install && npm run build
+        BUILD_SCRIPT: touch .nojekyll && npm install && npm run build
