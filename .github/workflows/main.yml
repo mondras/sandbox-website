@@ -11,7 +11,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BASE_BRANCH: master
+        BASE_BRANCH: build-using-github-actions
         BRANCH: gh-pages
         FOLDER: docs
         NODE_ENV: production
