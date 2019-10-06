@@ -14,4 +14,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: docs
-        BUILD_SCRIPT: scripts/deploy.sh
+        BUILD_SCRIPT: mkdir -p docs/assets && mkdir -p docs/js && echo 'sandbox.is' > docs/CNAME && NODE_ENV=production webpack -p --progress
